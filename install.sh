@@ -17,6 +17,14 @@ configure_db() {
  echo "Nothing here yet"
 }
 
+setup_firewall() {
+ ufw app list
+ ufw allow in "Apache"
+ ufw allow in "OpenSSH"
+}
+
+
+
 needs_research() {
 # dont know what this is. Looks security related. 
 sudo -u www-data vi /srv/www/wordpress/wp-config.php
