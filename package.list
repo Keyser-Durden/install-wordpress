@@ -14,3 +14,4 @@ php-zip
 php-gd 
 php-soap
 php-xmlrpc
+php-fpm
