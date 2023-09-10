@@ -50,7 +50,7 @@ setup_firewall() {
  ufw app list
 }
 
-configure_mysql() {
+secure_db() {
  chmod +x mysql_secure_install.expect
  mysql_secure_install.expect
 }
@@ -100,4 +100,5 @@ sudo -u www-data vi /opt/www/wordpress/wp-config.php
 #create_wordpress_conf
 #enable_site
 #setup_firewall
+secure_db
 #configure_db
