@@ -23,7 +23,9 @@ setup_firewall() {
  ufw allow in "OpenSSH"
 }
 
-
+configure_mysql() {
+ mysql_secure_installation
+}
 
 needs_research() {
 # dont know what this is. Looks security related. 
