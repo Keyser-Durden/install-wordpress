@@ -81,10 +81,12 @@ sudo -u www-data vi /opt/www/wordpress/wp-config.php
 # define( 'NONCE_SALT',       'put your unique phrase here' );
 }
 
+### Uncomment these at your own risk :)
+
 #install_packages
 #download_wordpress
 #create_wordpress_conf
 #enable_site
 #setup_firewall
-secure_db
+#secure_db
 #configure_db
