@@ -11,3 +11,6 @@ php-mbstring
 php-mysql
 php-xml
 php-zip
+php-gd 
+php-soap
+php-xmlrpc
