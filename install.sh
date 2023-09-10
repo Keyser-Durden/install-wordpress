@@ -1,5 +1,12 @@
 #!/bin/bash
 
+
+install_packages() {
+ while read -r package; do
+     sudo apt-get install -y "$package" >> installation.log 2>> installation_errors.log
+ done < package.list
+}
+
 download_wordpress() {
  sudo mkdir -p /opt/www
  sudo chown www-data: /opt/www
