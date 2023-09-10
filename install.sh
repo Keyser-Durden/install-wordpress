@@ -18,7 +18,7 @@ create_wordpress_conf() {
 }
 
 enable_site() {
- a2ensite wordpress
+ a2ensite wordpress.conf
  a2enmod rewrite
  a2dissite 000-default
  service apache2 reload
