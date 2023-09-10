@@ -42,10 +42,11 @@ swap_index_order() {
 }
 
 needs_research() {
-# dont know what this is. Looks security related. 
+# Aledgedly this is already done upon installing wordpress
+# Check wp-config.php after install to check.
 curl -s https://api.wordpress.org/secret-key/1.1/salt/
 
-sudo -u www-data vi /srv/www/wordpress/wp-config.php
+sudo -u www-data vi /opt/www/wordpress/wp-config.php
 define( 'AUTH_KEY',         'put your unique phrase here' );
 define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
 define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
