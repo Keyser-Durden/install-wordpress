@@ -90,3 +90,7 @@ define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 define( 'NONCE_SALT',       'put your unique phrase here' );
 }
 
+#install_packages
+#download_wordpress
+#enable_site
+#setup_firewall
