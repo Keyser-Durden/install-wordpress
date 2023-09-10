@@ -5,6 +5,11 @@ install_packages() {
  xargs -a package.list sudo apt-get install -y < /dev/null >> installation.log 2>> installation_errors.log
 }
 
+setup_php_fpm() {
+ /usr/sbin/php-fpm8.1 -v
+ sudo ln -s /usr/sbin/php-fpm8.1 /usr/sbin/php-fpm
+}
+
 download_wordpress() {
  sudo mkdir -p /opt/www
  sudo chown www-data: /opt/www
