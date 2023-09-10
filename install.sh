@@ -2,7 +2,7 @@
 source settings.conf
 
 install_packages() {
- xargs -a package.list sudo apt-get install -y < /dev/null >> installation.log 2>> installation_errors.log
+ xargs -a package.list sudo apt-get install -y < /dev/null >> apt.log 2>> apt_errors.log
 }
 
 setup_php_fpm() {
