@@ -1,5 +1,6 @@
 apache2 
 mariadb-server
+expect
 ghostscript
 libapache2-mod-php
 php
