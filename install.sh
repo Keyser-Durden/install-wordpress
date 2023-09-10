@@ -43,6 +43,8 @@ swap_index_order() {
 
 needs_research() {
 # dont know what this is. Looks security related. 
+curl -s https://api.wordpress.org/secret-key/1.1/salt/
+
 sudo -u www-data vi /srv/www/wordpress/wp-config.php
 define( 'AUTH_KEY',         'put your unique phrase here' );
 define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
