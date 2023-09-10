@@ -32,7 +32,6 @@ enable_site() {
 }
 
 configure_db() {
-  echo "need to check this"
   # CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
   # GRANT ALL ON wordpress.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'password';
   # FLUSH PRIVILEGES;
