@@ -31,18 +31,18 @@ enable_site() {
  #service apache2 reload
  systemctl reload apache2
 }
- 
-configure_db() {
- echo "need to check this"
- # CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
- # GRANT ALL ON wordpress.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'password';
- # FLUSH PRIVILEGES;
- mysql -u root -p <<EOF
- CREATE DATABASE $DB_NAME DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
- GRANT ALL ON $DB_NAME.* TO '$DB_USER'@'localhost' IDENTIFIED BY '$DB_PASSWORD';
- FLUSH PRIVILEGES;
- EXIT;
- EOF
+
+ configure_db() {
+  echo "need to check this"
+  # CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+  # GRANT ALL ON wordpress.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'password';
+  # FLUSH PRIVILEGES;  
+  mysql -u root -p <<EOF
+  CREATE DATABASE $DB_NAME DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+  GRANT ALL ON $DB_NAME.* TO '$DB_USER'@'localhost' IDENTIFIED BY '$DB_PASSWORD';
+  FLUSH PRIVILEGES;
+  EXIT;
+EOF
 }
 
 setup_firewall() {
