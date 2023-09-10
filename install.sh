@@ -92,5 +92,6 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
 
 #install_packages
 #download_wordpress
+### create_wordpress_conf
 #enable_site
 #setup_firewall
