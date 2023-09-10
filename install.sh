@@ -27,6 +27,17 @@ configure_mysql() {
  mysql_secure_installation
 }
 
+apache_test_restart() {
+ apache2ctl configtest
+ systemctl reload apache2
+}
+
+swap_index_order() {
+ vi /etc/apache2/mods-enabled/dir.conf
+ # Swap the order of items to put index.php first. Something like
+ # DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+}
+
 needs_research() {
 # dont know what this is. Looks security related. 
 sudo -u www-data vi /srv/www/wordpress/wp-config.php
