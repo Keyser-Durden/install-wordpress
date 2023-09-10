@@ -11,6 +11,12 @@ download_wordpress() {
  curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /opt/www
 }
 
+create_wordpress_conf() {
+ echo "create_wordpress_conf"
+ # put wordpress.conf into /etc/apache2/sites-available/
+ # and make sure permissions are correct
+}
+
 enable_site() {
  a2ensite wordpress
  a2enmod rewrite
