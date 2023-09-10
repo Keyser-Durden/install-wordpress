@@ -13,3 +13,6 @@ enable_site() {
  service apache2 reload
 }
  
+configure_db() {
+ echo "Nothing here yet"
+}
