@@ -101,3 +101,4 @@ sudo -u www-data vi /opt/www/wordpress/wp-config.php
 ### create_wordpress_conf
 #enable_site
 #setup_firewall
+configure_db
