@@ -20,8 +20,7 @@ download_wordpress() {
 
 create_wordpress_conf() {
  echo "create_wordpress_conf"
- # put wordpress.conf into /etc/apache2/sites-available/
- # and make sure permissions are correct
+ cp wordpress.conf /etc/apache2/sites-available/
 }
 
 enable_site() {
