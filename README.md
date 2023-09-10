@@ -1,10 +1,6 @@
 # install-wordpress
-Script to install wordpress on a fresh Ubuntu 22.04 server
-Apache and InMariaDB
-
-* Install git.
-
-
+Script to install wordpress on a completely fresh Ubuntu 22.04 server
+Apache and MariaDB
 
 
 
