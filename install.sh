@@ -51,7 +51,8 @@ setup_firewall() {
 }
 
 configure_mysql() {
- mysql_secure_installation
+ chmod +x mysql_secure_install.expect
+ mysql_secure_install.expect
 }
 
 apache_test_restart() {
