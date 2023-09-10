@@ -96,7 +96,7 @@ sudo -u www-data vi /opt/www/wordpress/wp-config.php
 
 #install_packages
 #download_wordpress
-### create_wordpress_conf
+#create_wordpress_conf
 #enable_site
 #setup_firewall
 #configure_db
