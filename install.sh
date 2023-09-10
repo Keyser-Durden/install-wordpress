@@ -66,19 +66,6 @@ swap_index_order() {
  # DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
 }
 
-enable_htaccess() {
-vi /etc/apache2/sites-available/wordpress.conf
-# ensure "AllowOverride All" 
-
-#<VirtualHost *:80>
-#. . .
-#    <Directory /var/www/wordpress/>
-#        AllowOverride All
-#    </Directory>
-#. . .
-#</VirtualHost>
-}
-
 needs_research() {
 # Aledgedly this is already done upon installing wordpress
 # Check wp-config.php after install to check.
