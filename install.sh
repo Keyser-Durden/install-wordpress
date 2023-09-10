@@ -43,6 +43,7 @@ setup_firewall() {
  ufw app list
  ufw allow in "Apache"
  ufw allow in "OpenSSH"
+ ufw app list
 }
 
 configure_mysql() {
