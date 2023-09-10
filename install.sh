@@ -8,6 +8,8 @@ install_packages() {
 setup_php_fpm() {
  /usr/sbin/php-fpm8.1 -v
  sudo ln -s /usr/sbin/php-fpm8.1 /usr/sbin/php-fpm
+ sudo systemctl enable php8.1-fpm
+ sudo systemctl start php8.1-fpm
 }
 
 download_wordpress() {
